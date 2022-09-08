@@ -1,38 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista Itens</title>
+  <meta charset="UTF-8">
+  <title>Manipulando o DOM - Aula 3</title>
+  <link rel="stylesheet" href="lista.css">
 </head>
 <body>
-    <ul class="lista">
-        <div class="item">Laranja</div>
-        <div class="item">Vermelho</div>
-        <div class="item">Branco</div>
-        <div class="item">Laranja</div>
-        <div class="item">Preto</div>
-    </ul>
 
-    <script>
-        const listaItens = document.querySelectorAll(".lista .item");
+  <button onclick="mostraTintas(this)">Aluratintas em estoque:</button>
 
-        console.log(listaItens.length);
+  <ul class="lista">
+    <li cor="laranja" tipo="tinta-exterior" class="item">Tinta laranja</li>
+    <li cor="vermelho" tipo="tinta-interior" class="item">Tinta vermelha</li>
+    <li cor="branco" tipo="tinta-interior" class="item">Tinta branca</li>
+    <li cor="amarelo" tipo="tinta-exterior" class="item">Tinta amarela</li>
+    <li cor="rosa" tipo="tinta-exterior" class="item">Tinta rosa</li>
+    <li cor="preto" tipo="tinta-exterior" class="item">Tinta preta</li>
+  </ul>
 
-        var lista = ["Laranja","Vermelho","Branco","Amarelo","Rosa"];
+  <a href="https://alura.com.br/" target="_blank"><img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo"></a>
 
-        console.log(lista);
-
-        lista.splice(1,1)
-
-        console.log(lista);
-
-        lista.includes(1, "Vermelho");
-
-        console.log(lista);
-
-        
-    </script>
+  <script src="lista.js"></script>
 </body>
 </html>
